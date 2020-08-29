@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.name-app {
+    text-shadow: aquamarine 2px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90px;
+    padding-left: 50px;
+    padding-right: 90px;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+    background-color: #cad8dd;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.header-wrapper .middel-section .cursor-pointer:hover .menu-personalities {
+    display: flex;
+}

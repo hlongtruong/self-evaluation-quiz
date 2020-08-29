@@ -1,0 +1,108 @@
+.welcome-container .header-wrapper {
+    height: 90px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    top: 0px;
+}
+
+.welcome-container .name-app {
+    text-shadow: aquamarine 2px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90px;
+    padding-left: 50px;
+    padding-right: 90px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 500px;
+}
+
+.welcome-container .header-wrapper .middel-section {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    background-origin: padding-box;
+}
+
+.welcome-container .header-wrapper .middel-section .cursor-pointer .menu-personalities {
+    display: none;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+.welcome-container .header-wrapper .middel-section .cursor-pointer:hover .menu-personalities {
+    display: flex;
+}
+
+.welcome-container .header-wrapper .middel-section .cursor-pointer .menu-personalities li {
+    background: #cad8dd;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 4px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.welcome-container .header-wrapper .middel-section>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 20px;
+    height: 90px;
+}
+
+.welcome-container .header-wrapper .middel-section>ul>li {
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #576071;
+    width: 200px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.welcome-container .header-wrapper .right-section {
+    display: flex;
+    line-height: 90px;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+.welcome-container .main-container {
+    background-image: url(../images/welcome.gif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.welcome-container .main-container .main-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-container .main-container .main-wrapper .main-text {
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+}
+
+.welcome-container .main-container .main-wrapper .explore {
+    background-color: cadetblue;
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    color: #ffff;
+    border: none;
+}
