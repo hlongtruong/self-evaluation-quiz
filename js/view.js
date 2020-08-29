@@ -43,7 +43,8 @@ view.setActiveScreen = (screenName) => {
                 })
             document.getElementById('redirect-to-register').addEventListener('click', () => {
                 view.setActiveScreen('registerScreen');
-            })
+            });
+            document.getElementsByClassName('question').innerText = questions[0];
             break;
         case 'loginScreen':
             document.getElementById('app')

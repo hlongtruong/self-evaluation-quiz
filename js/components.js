@@ -95,6 +95,38 @@ components.mbtiScreen = `
         </div>
     </div>
 `
-components.testScreen = ``
+components.testScreen = `<div class="test-container">
+<div class="header-wrapper">
+    <a href="" class="name-app">In To Out</a>
+    <nav class="middel-section">
+        <ul>
+            <li class="cursor-pointer" id="redirect-to-mbti">MBTI
+            </li>
+            <li class="cursor-pointer">Các loại tính cách
+                <nav class="menu-personalities">
+                    <ul>
+                        <li>Xu hướng tâm lý</li>
+                        <li>Nhận thức thế giới</li>
+                        <li>Cách thức ra quyết định</li>
+                        <li>Nguyên tắc hành động</li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="cursor-pointer">Báo và khảo sát</li>
+
+        </ul>
+    </nav>
+    <div class="right-section">
+        <div id="redirect-to-login">LogIn</div>
+        <div id="redirect-to-register">Register</div>
+    </div>
+</div>
+<form class="test-wrapper">
+    <div class="question"></div>
+    <input type="range" min="1" max="5" value="50" class="slider" id="myRange">
+    <button type="submit" id="submit">NEXT</button>
+</form>
+
+</div>`
 components.loginScreen = ``
 components.registerScreen = ``
