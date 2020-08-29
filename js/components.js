@@ -122,7 +122,7 @@ components.testScreen = `<div class="test-container">
     </div>
 </div>
 <form class="test-wrapper">
-    <div class="question"></div>
+    <div id="question"></div>
     <input type="range" min="1" max="5" value="50" class="slider" id="myRange">
     <button type="submit" id="submit">NEXT</button>
 </form>
