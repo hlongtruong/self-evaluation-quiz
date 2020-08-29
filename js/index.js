@@ -1,4 +1,4 @@
-const init = () => {
+const init = async() => {
     var firebaseConfig = {
         apiKey: "AIzaSyBGJ8AJ0kUpAe3AxR2dPNhLFZPzb2O7PLg",
         authDomain: "in-to-out-fac3e.firebaseapp.com",
@@ -11,7 +11,8 @@ const init = () => {
     firebase.initializeApp(firebaseConfig);
     console.log('window loaded')
     view.setActiveScreen('welcomeScreen')
-    model.questions = firestoreFunction()
+    model.questions = await firestoreFunction()
+    console.log(model.questions)
 }
 window.onload = init;
 const listquestion = undefined;
@@ -19,12 +20,12 @@ firestoreFunction = async() => {
     const documentId = "ChKfnVYx7sk9MfM1cW79"
     const response = await firebase.firestore().collection("Questions").doc(documentId).get()
     const data = getDataFromDoc(response)
-    const questions = data["Questions"];
+    questions = data["Questions"];
 
-    console.log(questions)
+
     return questions
 }
-console.log(model.questions)
+
 
 getDataFromDoc = (doc) => {
     const data = doc.data()
