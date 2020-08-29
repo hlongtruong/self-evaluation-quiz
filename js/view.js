@@ -8,6 +8,19 @@ view.setActiveScreen = (screenName) => {
             redirecToMbti.addEventListener('click', () => {
                 view.setActiveScreen('mbtiScreen')
             })
+            document.getElementById('redirect-to-test')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('testScreen');
+                })
+            document.getElementById('redirect-to-login')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('loginScreen');
+                })
+            document.getElementById('redirect-to-register')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('registerScreen');
+                })
+
             break;
         case 'mbtiScreen':
             document.getElementById('app')
