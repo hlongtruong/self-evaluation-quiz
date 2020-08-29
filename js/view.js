@@ -12,5 +12,6 @@ view.setActiveScreen = (screenName) => {
         case 'mbtiScreen':
             document.getElementById('app')
                 .innerHTML = components.mbtiScreen;
+        
     }
 }
