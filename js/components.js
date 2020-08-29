@@ -22,14 +22,14 @@ components.welcomeScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-                <div>LogIn</div>
-                <div>SignIn</div>
+                <div id="redirect-to-login">LogIn</div>
+                <div id="redirect-to-register">Register</div>
             </div>
         </div>
         <div class="main-container">
             <div class="main-wrapper">
                 <div class="main-text">Bạn đã hiểu rõ tính cách của mình ?</div>
-                <button class="explore">Explore</button>
+                <button class="explore" id="redirect-to-test" type="click">Explore</button>
             </div>
         </div>
     </div>
@@ -57,8 +57,8 @@ components.mbtiScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-                <div>LogIn</div>
-                <div>SignIn</div>
+                <div id="redirect-to-login">LogIn</div>
+                <div id="redirect-to-register">Register</div>
             </div>
         </div>
         <div class="mbti-wrapper">
@@ -95,3 +95,6 @@ components.mbtiScreen = `
         </div>
     </div>
 `
+components.testScreen = ``
+components.loginScreen = ``
+components.registerScreen = ``
