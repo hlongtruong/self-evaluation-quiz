@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mbti.css">
     <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/NPT.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>In to Out</title>
 </head>
 
 <body>
-    <div class="test-container">
+    <div class="NPT-container">
         <div class="header-wrapper">
             <a href="" class="name-app">In To Out</a>
             <nav class="middel-section">
@@ -23,10 +24,10 @@
                     <li class="cursor-pointer">Các loại tính cách
                         <nav class="menu-personalities">
                             <ul>
-                                <li>Xu hướng tâm lý</li>
-                                <li>Nhận thức thế giới</li>
-                                <li>Cách thức ra quyết định</li>
-                                <li>Nguyên tắc hành động</li>
+                                <li id="redirect-toNPT">Nhà Phân Tích</li>
+                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>
@@ -39,14 +40,25 @@
                 <div id="redirect-to-register">Register</div>
             </div>
         </div>
-        <form class="test-wrapper">
-            <div class="question"></div>
-            <input type="range" min="1" max="5" value="50" class="slider" id="myRange">
-            <button type="submit" id="submit">NEXT</button>
-        </form>
-
+        <div class="NPT-wrapper">
+            <div class="cursor-pointer1" id="redirect-to-KTS">
+                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_INTJ_elon_musk.svg?v=3" alt=""></div>
+                <div style="margin-top:4px; text-align:center;">KIẾN TRÚC SƯ (ANTJ-A/ANTJ-T)</div>
+            </div>
+            <div class="cursor-pointer1" id="redirect-to-NLH">
+                <div id="nhalogic-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_INTP_albert_einstein.svg?v=3" alt=""></div>
+                <div style="margin-top:4px; text-align:center;">NHÀ LOGIC HỌC (INTP-A/INTP-T)</div>
+            </div>
+            <div class="cursor-pointer1" id="redirect-to-CH">
+                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_ENTJ_franklin_d_roosevelt.svg?v=3" alt=""></div>
+                <div style="margin-top:4px; text-align:center;">CHỈ HUY (ENTJ-A/ENTJ-T)</div>
+            </div>
+            <div class="cursor-pointer1" id="redirect-to-NTL">
+                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_ENTP_sarah_silverman.svg?v=3" alt=""></div>
+                <div style="margin-top:4px; text-align:center;">NGƯỜI TRANH LUẬN (ENTP-A/ENTP-T)</div>
+            </div>
+        </div>
     </div>
-
     <script src="../js/controller.js"></script>
     <script src="../js/view.js"></script>
     <script src="../js/model.js"></script>
