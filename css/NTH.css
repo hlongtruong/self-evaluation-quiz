@@ -1,0 +1,19 @@
+.NTH-container .NTH-wrapper {
+    background: #f2f3f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.NTH-container .NTH-wrapper div {
+    height: 400px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
