@@ -107,7 +107,7 @@ input[type="range"] {
     height: 90px;
 }
 
-.test-container .test-wrapper .question {
+.test-container .test-wrapper #question {
     height: 50px;
     /* background-color: #ffffff; */
     width: max-content;
