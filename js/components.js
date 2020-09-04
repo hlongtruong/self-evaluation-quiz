@@ -319,3 +319,4 @@ components.NTHScreen = `
         </div>
     </div>
     `
+components.personalities =``
