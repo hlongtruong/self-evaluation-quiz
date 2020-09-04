@@ -10,9 +10,25 @@ const init = async() => {
     };
     firebase.initializeApp(firebaseConfig);
     console.log('window loaded')
-    view.setActiveScreen('welcomeScreen')
+
     model.questions = await firestoreFunction()
-    console.log(model.questions)
+    firebase.auth().onAuthStateChanged(function(user) {
+        console.log(user)
+        if (user) {
+            if (user.emailVerified) {
+                model.currentUser = {
+                    displayName: user.displayName,
+                    email: user.email
+                }
+                view.setActiveScreen('welcomeScreen')
+            } else {
+                view.setActiveScreen('loginScreen')
+                alert('Please verify your email')
+            }
+        } else {
+            view.setActiveScreen('loginScreen')
+        }
+    });
 }
 window.onload = init;
 const listquestion = undefined;

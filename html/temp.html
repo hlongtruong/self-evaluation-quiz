@@ -9,54 +9,50 @@
     <link rel="stylesheet" href="../css/mbti.css">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/NPT.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>In to Out</title>
 </head>
 
 <body>
-    <div class="NPT-container">
-        <div class="header-wrapper">
-            <a href="" class="name-app">In To Out</a>
-            <nav class="middel-section">
-                <ul>
-                    <li class="cursor-pointer" id="redirect-to-mbti">MBTI
-                    </li>
-                    <li class="cursor-pointer">Các loại tính cách
-                        <nav class="menu-personalities">
-                            <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li class="cursor-pointer">Báo và khảo sát</li>
-
-                </ul>
-            </nav>
-            <div class="right-section">
-                <div id="redirect-to-login">LogIn</div>
-                <div id="redirect-to-register">Register</div>
+    <div class="register-container">
+        <div class="aside-right">
+            <div class="header">
+                <h3>IN TO OUT</h3>
             </div>
-        </div>
-        <div class="NPT-wrapper">
-            <div class="cursor-pointer1" id="redirect-to-KTS">
-                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_INTJ_elon_musk.svg?v=3" alt=""></div>
-                <div style="margin-top:4px; text-align:center;">KIẾN TRÚC SƯ (ANTJ-A/ANTJ-T)</div>
-            </div>
-            <div class="cursor-pointer1" id="redirect-to-NLH">
-                <div id="nhalogic-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_INTP_albert_einstein.svg?v=3" alt=""></div>
-                <div style="margin-top:4px; text-align:center;">NHÀ LOGIC HỌC (INTP-A/INTP-T)</div>
-            </div>
-            <div class="cursor-pointer1" id="redirect-to-CH">
-                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_ENTJ_franklin_d_roosevelt.svg?v=3" alt=""></div>
-                <div style="margin-top:4px; text-align:center;">CHỈ HUY (ENTJ-A/ENTJ-T)</div>
-            </div>
-            <div class="cursor-pointer1" id="redirect-to-NTL">
-                <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/analysts_ENTP_sarah_silverman.svg?v=3" alt=""></div>
-                <div style="margin-top:4px; text-align:center;">NGƯỜI TRANH LUẬN (ENTP-A/ENTP-T)</div>
-            </div>
+            <form id="register-form">
+                <div class="input-name-wrapper">
+                    <div class="input-wrapper">
+                        <input type="text" name="firstName" placeholder="First name">
+                        <div class="error" id="first-name-error"></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="lastName" placeholder="Last name">
+                        <div class="error" id="last-name-error"></div>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Email" name="email">
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Password" name="password">
+                    <div class="error" id="password-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Confirm password" name="confirmPassword">
+                    <div class="error" id="confirm-password-error"></div>
+                </div>
+                <div class="form-action">
+                    <span class="cursor-pointer2" id="redirect-to-login">
+                Already have an account? Login
+              </span>
+                    <button class="btn" type="submit">
+                Register
+              </button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="../js/controller.js"></script>
