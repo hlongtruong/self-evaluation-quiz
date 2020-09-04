@@ -77,7 +77,9 @@
     flex-direction: column;
 }
 
-.test-container .test-wrapper .slider {}
+.test-container .test-wrapper .slider {
+    width: 50%;
+}
 
 .test-container .test-wrapper #submit {
     margin: 30px;

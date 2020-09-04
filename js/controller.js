@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const equation = {}
 equation.score = () => {
     extroversion = [1, 6, 23, 34, 20, 21, 26, 23, 43, 50, 58, 52, 63, 111, 98, 112, 99, 118, 101, 117]
@@ -66,3 +67,26 @@ controller.register = (data) => {
     }
 
 }
+=======
+const controller = {}
+controller.gettingAnswer = (data) =>{
+    if (data === "1"){
+        return 1
+    }
+    else if (data === "2"){
+        return 2
+    }
+    else if (data === "3"){
+        return 3
+    }
+    else if (data === "4"){
+        return 4
+    }
+    else if (data === "5"){
+        return 5
+    }
+    else{
+        return 0
+    }
+}
+>>>>>>> 7aee9e5067ad8137363c4c4b1a3e491c6dfabfec

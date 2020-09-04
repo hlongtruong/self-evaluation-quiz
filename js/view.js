@@ -11,7 +11,7 @@ view.setActiveScreen = (screenName) => {
                 })
             document.getElementById('redirect-to-test')
                 .addEventListener('click', () => {
-                    view.setActiveScreen('testScreen');
+                    view.setActiveScreen('testScreen')
                 })
             document.getElementById('redirect-toNPT')
                 .addEventListener('click', () => {
@@ -66,24 +66,24 @@ view.setActiveScreen = (screenName) => {
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
                 })
-            let random = Math.floor(Math.random() * 120) + 1;
-            document.getElementById('question').innerText = model.questions[random];
-            document.getElementById('form-test')
-                .addEventListener('submit', (e) => {
-                    e.preventDefault();
+            // let random = Math.floor(Math.random() * 120) + 1;
+            // document.getElementById('question').innerText = model.questions[random];
+            // document.getElementById('form-test')
+            //     .addEventListener('submit', (e) => {
+            //         e.preventDefault();
 
-                    number++;
-                    const score = document.getElementById('myRange')
-                    console.log(score.value)
+            //         number++;
+            //         const score = document.getElementById('myRange')
+            //         console.log(score.value)
 
-                    if (number < 25) {
-                        document.getElementById('question').innerText = model.questions[random];
-                        let random1 = Math.floor(Math.random() * 120) + 1;
-                        document.getElementById('question').innerText = model.questions[random1];
-                    } else if (number >= 25) {
-                        view.setActiveScreen('resultScreen');
-                    }
-                })
+            //         if (number < 25) {
+            //             document.getElementById('question').innerText = model.questions[random];
+            //             let random1 = Math.floor(Math.random() * 120) + 1;
+            //             document.getElementById('question').innerText = model.questions[random1];
+            //         } else if (number >= 25) {
+            //             view.setActiveScreen('resultScreen');
+            //         }
+            //     })
             document.getElementById('redirect-toNPT')
                 .addEventListener('click', () => {
                     view.setActiveScreen('NPTScreen')
@@ -100,10 +100,54 @@ view.setActiveScreen = (screenName) => {
                 .addEventListener('click', () => {
                     view.setActiveScreen('NTHScreen')
                 })
+<<<<<<< HEAD
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
                 })
+=======
+            document.getElementById('redirect-to-register').addEventListener('click', () => {
+                view.setActiveScreen('registerScreen');
+            })
+            const answerform = document.getElementById("form-test")
+            var answer = true
+            var i = parseInt(Math.random()*16)
+            max = i+4
+            for (i; i < max; i++){
+                for (var j in model.equation){
+                    if (answer == true){
+                        noQuestion = model.equation[j][0][i]
+                        document.getElementById("question").innerText = model.questions[noQuestion]
+                        console.log("question");
+                        answer = false
+                        if (answer == false){
+                            answerform.addEventListener("submit", (event) => {
+                                event.preventDefault()
+                                const data = document.getElementById('myRange').value
+                                console.log("answer");
+                                if (i % 2 === 0){
+                                    model.equation[j][1] += controller.gettingAnswer(data)
+                                    console.log(model.equation[j][1])
+                                    answer = true
+                                }
+                                else if (i % 2 === 1){
+                                    model.equation[j][1] -= controller.gettingAnswer(data)
+                                    console.log(model.equation[j][1])
+                                    answer = true
+                                }
+                                // if (i === max && model.equation[j] === model.equation["leadership"]){
+                                //     document.getElementById("submit").innerText = "DONE"
+                                    
+                                // }
+                            })
+                        }
+                    }    
+                }
+            }
+            // for(x in model.equation){
+            //     console.log(model.equation[x][1]);
+            // }
+>>>>>>> 7aee9e5067ad8137363c4c4b1a3e491c6dfabfec
             break;
         case 'loginScreen':
             document.getElementById('app')
@@ -124,6 +168,7 @@ view.setActiveScreen = (screenName) => {
             break;
         case 'registerScreen':
             document.getElementById('app')
+<<<<<<< HEAD
                 .innerHTML = components.registerScreen;
             document.getElementById('redirect-to-login')
                 .addEventListener('click', () => {
@@ -391,5 +436,9 @@ view.setActiveScreen = (screenName) => {
                     model.logout();
                 })
             break;
+=======
+                .innerHTML = components.loginScreen;
+
+>>>>>>> 7aee9e5067ad8137363c4c4b1a3e491c6dfabfec
     }
 }
