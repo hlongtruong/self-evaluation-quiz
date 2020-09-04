@@ -8,8 +8,3 @@ model.equation = {
     wisdom : [[7,95,17,48,22,49,92,59,44,67,54,68,64,70,69,102,72,103,82,107],0],
     leadership : [[2,15,19,30,27,42,38,47,41,55,78,60,88,105,90,3,96,100,109,108],0]
 }
-model.gettingAnswer = () =>{
-    if (document.getElementById('myRange').value = 0){
-        console.log(answer);
-    }
-}

@@ -11,7 +11,7 @@ view.setActiveScreen = (screenName) => {
                 })
             document.getElementById('redirect-to-test')
                 .addEventListener('click', () => {
-                    view.setActiveScreen('testScreen');
+                    view.setActiveScreen('testScreen')
                 })
             document.getElementById('redirect-toNPT')
                 .addEventListener('click', () => {
@@ -94,26 +94,37 @@ view.setActiveScreen = (screenName) => {
                 })
             document.getElementById('redirect-to-register').addEventListener('click', () => {
                 view.setActiveScreen('registerScreen');
-            });
+            })
+            const answerform = document.getElementById("form-test")
             var answer = true
-            for (var i = Math.random()*16; i < i+4; i++){
+            var i = parseInt(Math.random()*16)
+            max = i+4
+            for (i; i < max; i++){
                 for (var j in model.equation){
                     if (answer == true){
-                        document.getElementById("question").innerText = j[0][i]
+                        noQuestion = model.equation[j][0][i]
+                        document.getElementById("question").innerText = model.questions[noQuestion]
+                        console.log("question");
                         answer = false
                         if (answer == false){
-                            const answerform = document.getElementById("form-test")
                             answerform.addEventListener("submit", (event) => {
                                 event.preventDefault()
                                 const data = document.getElementById('myRange').value
+                                console.log("answer");
                                 if (i % 2 === 0){
                                     model.equation[j][1] += controller.gettingAnswer(data)
                                     console.log(model.equation[j][1])
+                                    answer = true
                                 }
-                                else{
+                                else if (i % 2 === 1){
                                     model.equation[1] -= controller.gettingAnswer(data)
                                     console.log(model.equation[j][1])
+                                    answer = true
                                 }
+                                // if (i === max && model.equation[j] === model.equation["leadership"]){
+                                //     document.getElementById("submit").innerText = "DONE"
+                                    
+                                // }
                         })
                     }
                     }    
