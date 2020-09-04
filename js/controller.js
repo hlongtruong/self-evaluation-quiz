@@ -1,20 +1,21 @@
 const controller = {}
-controller.gettingAnswer = async(data) =>{
-    if (data < 20){
+controller.gettingAnswer = (data) =>{
+    if (data === "1"){
         return 1
     }
-    else if (data >= 20 && data < 40){
+    else if (data === "2"){
         return 2
     }
-    else if (data >= 40 && data < 60){
+    else if (data === "3"){
         return 3
     }
-    else if (data >= 60 && data < 80){
+    else if (data === "4"){
         return 4
     }
-    else if (data >= 80){
+    else if (data === "5"){
         return 5
     }
-
-
+    else{
+        return 0
+    }
 }

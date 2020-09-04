@@ -117,7 +117,7 @@ view.setActiveScreen = (screenName) => {
                                     answer = true
                                 }
                                 else if (i % 2 === 1){
-                                    model.equation[1] -= controller.gettingAnswer(data)
+                                    model.equation[j][1] -= controller.gettingAnswer(data)
                                     console.log(model.equation[j][1])
                                     answer = true
                                 }
@@ -125,8 +125,8 @@ view.setActiveScreen = (screenName) => {
                                 //     document.getElementById("submit").innerText = "DONE"
                                     
                                 // }
-                        })
-                    }
+                            })
+                        }
                     }    
                 }
             }
