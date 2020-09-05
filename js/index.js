@@ -1,4 +1,4 @@
-const init = async () => {
+const init = async() => {
     var firebaseConfig = {
         apiKey: "AIzaSyBGJ8AJ0kUpAe3AxR2dPNhLFZPzb2O7PLg",
         authDomain: "in-to-out-fac3e.firebaseapp.com",
@@ -12,7 +12,7 @@ const init = async () => {
     console.log('window loaded')
 
     model.questions = await firestoreFunction()
-<<<<<<< HEAD
+
     firebase.auth().onAuthStateChanged(function(user) {
         console.log(user)
         if (user) {
@@ -30,10 +30,10 @@ const init = async () => {
             view.setActiveScreen('loginScreen')
         }
     });
-=======
+
     console.log(model.questions);
-    
->>>>>>> 7aee9e5067ad8137363c4c4b1a3e491c6dfabfec
+
+
 }
 window.onload = init;
 const listquestion = undefined;
@@ -42,7 +42,7 @@ firestoreFunction = async() => {
     const response = await firebase.firestore().collection("Questions").doc(documentId).get()
     const data = getDataFromDoc(response)
     questions = data["Questions"]
-    // console.log(questions)
+        // console.log(questions)
     return questions
 }
 
