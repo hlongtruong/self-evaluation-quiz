@@ -274,13 +274,15 @@ components.NTHScreen = `
                 <ul>
                     <li class="cursor-pointer" id="redirect-to-mbti">MBTI
                     </li>
-                    <li class="cursor-pointer">Các loại tính cách
+                    <li class="cursor-pointer">Phân loại
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                                <li id="redirect-toNPT">Tính Hướng Ngoại</li>
+                                <li id="redirect-toNNG">Tính Hòa Nhập</li>
+                                <li id="redirect-toS">Tính Trách Nhiệm</li>
+                                <li id="redirect-toNTH">Tính Xúc Cảm</li>
+                                <li id="redirect-toNTH">Tính Tò Mò</li>
+                                <li id="redirect-toNTH">Tính Lãnh Đạo</li>
                             </ul>
                         </nav>
                     </li>
