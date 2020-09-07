@@ -33,140 +33,154 @@ model.equation = {
     wisdom : [[7,95,17,48,22,49,92,59,44,67,54,68,64,70,69,102,72,103,82,107],0],
     leadership : [[2,15,19,30,27,42,38,47,41,55,78,60,88,105,90,3,96,100,109,108],0]
 }
-model.gettingEQuestion = (num) => {
-    noQuestion = model.equation.extroversion[0][num]
+model.gettingEQuestion = () => {
+    noQuestion = model.equation.extroversion[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingEAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.extroversion[1] += controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.extroversion[1] += controller.scoringAnswer(data)
             console.log("extroversion:")
             console.log(model.equation.extroversion[1])
         }
-        else if (num % 2 === 1){
-            model.equation.extroversion[1] -= controller.gettingAnswer(data)
+        else if (rannum % 2 === 1){
+            model.equation.extroversion[1] -= controller.scoringAnswer(data)
             console.log("extroversion:")
             console.log(model.equation.extroversion[1])
         }
-        number++
-        model.gettingAQuestion(num)
+        answerform.removeEventListener("submit", gettingEAnswer)
+        model.gettingAQuestion()
     })
 }
-model.gettingAQuestion = (num) => {
-    noQuestion = model.equation.adaptability[0][num]
+model.gettingAQuestion = () => {
+    noQuestion = model.equation.adaptability[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
-    console.log("question")
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingAAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.adaptability[1] += controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.adaptability[1] += controller.scoringAnswer(data)
             console.log("adaptability:")
             console.log(model.equation.adaptability[1])
         }
-        else if (num % 2 === 1){
-            model.equation.adaptability[1] -= controller.gettingAnswer(data)
+        else if (rannum % 2 === 1){
+            model.equation.adaptability[1] -= controller.scoringAnswer(data)
             console.log("adaptability:")
             console.log(model.equation.adaptability[1])
         }
-        number++
-        model.gettingCQuestion(num)
+        answerform.removeEventListener("submit", gettingAAnswer)
+        model.gettingCQuestion()
     })
 }
-model.gettingCQuestion = (num) => {
-    noQuestion = model.equation.conscientiousness[0][num]
+model.gettingCQuestion = () => {
+    noQuestion = model.equation.conscientiousness[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
-    console.log("question")
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingCAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.conscientiousness[1] += controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.conscientiousness[1] += controller.scoringAnswer(data)
             console.log("consientiousness:")
             console.log(model.equation.conscientiousness[1])
         }
-        else if (num % 2 === 1){
-            model.equation.conscientiousness[1] -= controller.gettingAnswer(data)
+        else if (rannum % 2 === 1){
+            model.equation.conscientiousness[1] -= controller.scoringAnswer(data)
             console.log("consientiousness:")
             console.log(model.equation.conscientiousness[1])
         }
-        number++
-        model.gettingNQuestion(num)
+        answerform.removeEventListener("submit", gettingCAnswer)
+        model.gettingNQuestion()
+
     })
 }
-model.gettingNQuestion = (num) => {
-    noQuestion = model.equation.neurotism[0][num]
+model.gettingNQuestion = () => {
+    noQuestion = model.equation.neurotism[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
-    console.log("question")
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingNAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.neurotism[1] += controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.neurotism[1] += controller.scoringAnswer(data)
             console.log("neurotism:")
             console.log(model.equation.neurotism[1])
         }
-        else if (num % 2 === 1){
-            model.equation.neurotism[1] -= controller.gettingAnswer(data)
+        else if (rannum % 2 === 1){
+            model.equation.neurotism[1] -= controller.scoringAnswer(data)
             console.log("neurotism:")
             console.log(model.equation.neurotism[1])
         }
-        number++
-        model.gettingWQuestion(num)
+        answerform.removeEventListener("submit", gettingNAnswer)
+        model.gettingWQuestion()
     })
 }
-model.gettingWQuestion = (num) => {
-    noQuestion = model.equation.wisdom[0][num]
+model.gettingWQuestion = () => {
+    noQuestion = model.equation.wisdom[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
-    console.log("question")
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingWAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.wisdom[1] += controller.gettingAnswer(data)
-            console.log("wisdom:")
-            console.log(equation.model.wisdom[1])
-        }
-        else if (num % 2 === 1){
-            model.equation.wisdom[1] -= controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.wisdom[1] += controller.scoringAnswer(data)
             console.log("wisdom:")
             console.log(model.equation.wisdom[1])
         }
-        number++
-        model.gettingLQuestion(num)
+        else if (rannum % 2 === 1){
+            model.equation.wisdom[1] -= controller.scoringAnswer(data)
+            console.log("wisdom:")
+            console.log(model.equation.wisdom[1])
+        }
+        answerform.removeEventListener("submit", gettingWAnswer)
+        model.gettingLQuestion()
     })
 }
-model.gettingLQuestion = (num) => {
-    noQuestion = model.equation.leadership[0][num]
+model.gettingLQuestion = () => {
+    noQuestion = model.equation.leadership[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
-    console.log("question")
+    number++
+    console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", (event) => {
+    answerform.addEventListener("submit", function gettingLAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
-        if (num % 2 === 0){
-            model.equation.leadership[1] += controller.gettingAnswer(data)
+        if (rannum % 2 === 0){
+            model.equation.leadership[1] += controller.scoringAnswer(data)
             console.log("leadership:")
             console.log(model.equation.leadership[1])
         }
-        else if (num % 2 === 1){
-            model.equation.leadership[1] -= controller.gettingAnswer(data)
+        else if (rannum % 2 === 1){
+            model.equation.leadership[1] -= controller.scoringAnswer(data)
             console.log("leadership:")
             console.log(model.equation.leadership[1])
         }
-        number++
+        answerform.removeEventListener("submit", gettingLAnswer)
+        if(number >= 6){
+            view.setActiveScreen("resultScreen")
+            return;
+        }
+        rannum++
+        model.gettingEQuestion()
     })
 }
 

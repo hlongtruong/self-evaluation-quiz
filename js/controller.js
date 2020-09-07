@@ -54,7 +54,7 @@ controller.register = (data) => {
         model.register(data)
     }
 }
-controller.gettingAnswer = (data) => {
+controller.scoringAnswer = (data) => {
     if (data === "1") {
         return 1
     } else if (data === "2") {

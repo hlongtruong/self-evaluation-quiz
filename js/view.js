@@ -1,6 +1,6 @@
 let number = 0;
 const view = {};
-var i = parseInt(Math.random() * 16)
+var rannum = parseInt(Math.random() * 16)
 view.setActiveScreen = (screenName) => {
     switch (screenName) {
         case 'welcomeScreen':
@@ -61,11 +61,8 @@ view.setActiveScreen = (screenName) => {
             break;
 
         case 'testScreen':
-            document.getElementById('app').innerHTML = components.testScreen;
-            model.gettingEQuestion(i)
-            if (number > 6){
-                view.setActiveScreen("resultScreen")
-            }
+            document.getElementById('app').innerHTML = components.testScreen
+            model.gettingEQuestion()
             document.getElementById('redirect-to-mbti')
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
