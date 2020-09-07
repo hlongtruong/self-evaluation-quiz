@@ -54,23 +54,18 @@ controller.register = (data) => {
         model.register(data)
     }
 }
-controller.gettingAnswer = (data) =>{
-    if (data === "1"){
+controller.gettingAnswer = (data) => {
+    if (data === "1") {
         return 1
-    }
-    else if (data === "2"){
+    } else if (data === "2") {
         return 2
-    }
-    else if (data === "3"){
+    } else if (data === "3") {
         return 3
-    }
-    else if (data === "4"){
+    } else if (data === "4") {
         return 4
-    }
-    else if (data === "5"){
+    } else if (data === "5") {
         return 5
-    }
-    else{
+    } else {
         return 0
     }
 }

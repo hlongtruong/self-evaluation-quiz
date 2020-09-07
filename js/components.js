@@ -22,7 +22,7 @@ components.welcomeScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-                <div id="logout">LogOut</div>
+                <div class="cursor-pointer2" id="logout">LogOut</div>
             </div>
         </div>
         <div class="main-container">
@@ -56,7 +56,7 @@ components.mbtiScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-                <div id="logout">LogOut</div>
+                <div class="cursor-pointer2" id="logout">LogOut</div>
             </div>
         </div>
         <div class="mbti-wrapper">
@@ -115,7 +115,7 @@ components.testScreen = `<div class="test-container">
         </ul>
     </nav>
     <div class="right-section">
-    <div id="logout">LogOut</div>
+    <div class="cursor-pointer2" id="logout">LogOut</div>
 
     </div>
 </div>
@@ -125,9 +125,6 @@ components.testScreen = `<div class="test-container">
     <button type="submit" id="submit">NEXT</button>
 </form>
 </div>`
-components.loginScreen = ``
-components.registerScreen = ``
-
 components.NPTScreen = `
 <div class="NPT-container">
         <div class="header-wrapper">
@@ -151,8 +148,7 @@ components.NPTScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-                <div id="redirect-to-login">LogIn</div>
-                <div id="redirect-to-register">Register</div>
+                <div class="cursor-pointer2" id="logout">LogOut</div>
             </div>
         </div>
         <div class="NPT-wrapper">
@@ -198,7 +194,7 @@ components.NNGScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-            <div id="logout">LogOut</div>
+            <div class="cursor-pointer2" id="logout">LogOut</div>
 
             </div>
         </div>
@@ -245,7 +241,7 @@ components.SScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-            <div id="logout">LogOut</div>
+            <div class="cursor-pointer2" id="logout">LogOut</div>
 
             </div>
         </div>
@@ -293,7 +289,7 @@ components.NTHScreen = `
                 </ul>
             </nav>
             <div class="right-section">
-            <div class="cursor-pointer2"id="logout">LogOut</div>
+            <div class="cursor-pointer2" id="logout">LogOut</div>
 
             </div>
         </div>

@@ -1,4 +1,4 @@
-const init = async () => {
+const init = async() => {
     var firebaseConfig = {
         apiKey: "AIzaSyBGJ8AJ0kUpAe3AxR2dPNhLFZPzb2O7PLg",
         authDomain: "in-to-out-fac3e.firebaseapp.com",
@@ -38,7 +38,7 @@ firestoreFunction = async() => {
     const response = await firebase.firestore().collection("Questions").doc(documentId).get()
     const data = getDataFromDoc(response)
     questions = data["Questions"]
-    // console.log(questions)
+        // console.log(questions)
     return questions
 }
 getDataFromDoc = (doc) => {

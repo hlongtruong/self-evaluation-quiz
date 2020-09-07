@@ -66,11 +66,11 @@ view.setActiveScreen = (screenName) => {
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
                 })
-            // let random = Math.floor(Math.random() * 120) + 1;
-            // document.getElementById('question').innerText = model.questions[random];
-            // document.getElementById('form-test')
-            //     .addEventListener('submit', (e) => {
-            //         e.preventDefault();
+                // let random = Math.floor(Math.random() * 120) + 1;
+                // document.getElementById('question').innerText = model.questions[random];
+                // document.getElementById('form-test')
+                //     .addEventListener('submit', (e) => {
+                //         e.preventDefault();
 
             //         number++;
             //         const score = document.getElementById('myRange')
@@ -109,11 +109,11 @@ view.setActiveScreen = (screenName) => {
             })
             const answerform = document.getElementById("form-test")
             var answer = true
-            var i = parseInt(Math.random()*16)
-            max = i+4
-            for (i; i < max; i++){
-                for (var j in model.equation){
-                    if (answer == true){
+            var i = parseInt(Math.random() * 16)
+            max = i + 4
+            for (i; i < max; i++) {
+                for (var j in model.equation) {
+                    if (answer == true) {
                         noQuestion = model.equation[j][0][i]
                         document.getElementById("question").innerText = model.questions[noQuestion]
                         console.log("question");
@@ -154,40 +154,41 @@ view.setActiveScreen = (screenName) => {
             // }
             break;
         case 'loginScreen':
-            document.getElementById('app')
-                .innerHTML = components.loginScreen;
+            document.getElementById('app').innerHTML = components.loginScreen
             document.getElementById('redirect-to-register')
                 .addEventListener('click', () => {
                     view.setActiveScreen('registerScreen')
                 })
-            const loginForm = document.getElementById('login-form');
-            loginForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                const dataLogin = {
+            const loginForm = document.getElementById('login-form')
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault()
+                loginForm.email.value = loginForm.email.value.trim()
+                const data = {
                     email: loginForm.email.value,
                     password: loginForm.password.value
                 }
-                controller.login(dataLogin)
+                controller.login(data)
             })
             break;
         case 'registerScreen':
             document.getElementById('app')
-                .innerHTML = components.registerScreen;
+                .innerHTML = components.registerScreen
+            const registerForm = document.getElementById('register-form')
+            registerForm.addEventListener('submit', (event) => {
+                event.preventDefault()
+                const data = {
+                    firstName: registerForm.firstName.value,
+                    lastName: registerForm.lastName.value,
+                    email: registerForm.email.value,
+                    password: registerForm.password.value,
+                    confirmPassword: registerForm.confirmPassword.value
+                }
+                console.log(data)
+                controller.register(data)
+            })
             document.getElementById('redirect-to-login')
                 .addEventListener('click', () => {
                     view.setActiveScreen('loginScreen')
-                    const registerForm = document.getElementById('register-form')
-                    registerForm.addEventListener('submit', (event) => {
-                        event.preventDefault();
-                        const data = {
-                            firstName: registerForm.firstName.value,
-                            lastName: registerForm.lastName.value,
-                            email: registerForm.email.value,
-                            password: registerForm.password.value,
-                            confirmPassword: registerForm.confirmPassword.value
-                        }
-                        controller.register(data);
-                    })
                 })
             break;
         case 'resultScreen':
