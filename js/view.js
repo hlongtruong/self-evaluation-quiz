@@ -1,5 +1,6 @@
-let number = 1;
+let number = 0;
 const view = {};
+var rannum = parseInt(Math.random() * 16)
 view.setActiveScreen = (screenName) => {
     switch (screenName) {
         case 'welcomeScreen':
@@ -60,8 +61,8 @@ view.setActiveScreen = (screenName) => {
             break;
 
         case 'testScreen':
-            document.getElementById('app')
-                .innerHTML = components.testScreen;
+            document.getElementById('app').innerHTML = components.testScreen
+            model.gettingEQuestion()
             document.getElementById('redirect-to-mbti')
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
@@ -120,18 +121,18 @@ view.setActiveScreen = (screenName) => {
                     max = i + 4
                 })
 
-            //         number++;
-            //         const score = document.getElementById('myRange')
-            //         console.log(score.value)
+            //     number++;
+            //     const score = document.getElementById('myRange')
+            //     console.log(score.value)
 
-            //         if (number < 25) {
-            //             document.getElementById('question').innerText = model.questions[random];
-            //             let random1 = Math.floor(Math.random() * 120) + 1;
-            //             document.getElementById('question').innerText = model.questions[random1];
-            //         } else if (number >= 25) {
-            //             view.setActiveScreen('resultScreen');
-            //         }
-            //     })
+            //     if (number < 25) {
+            //         document.getElementById('question').innerText = model.questions[random];
+            //         let random1 = Math.floor(Math.random() * 120) + 1;
+            //         document.getElementById('question').innerText = model.questions[random1];
+            //     } else if (number >= 25) {
+            //         view.setActiveScreen('resultScreen');
+            //      }
+            // })
             document.getElementById('redirect-toNPT')
                 .addEventListener('click', () => {
                     view.setActiveScreen('NPTScreen')
@@ -189,10 +190,6 @@ view.setActiveScreen = (screenName) => {
                 console.log(data)
                 controller.register(data)
             })
-            document.getElementById('redirect-to-login')
-                .addEventListener('click', () => {
-                    view.setActiveScreen('loginScreen')
-                })
             break;
         case 'resultScreen':
             document.getElementById('app')

@@ -11,55 +11,51 @@
     <link rel="stylesheet" href="../css/NPT.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/result.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>In to Out</title>
 </head>
 
 <body>
-    <div class="register-container">
-        <div class="aside-right">
-            <div class="header">
-                <h3>IN TO OUT</h3>
+
+
+
+
+
+
+
+    <div class="result-container">
+        <div class="header-wrapper">
+            <a href="" class="name-app">In To Out</a>
+            <nav class="middel-section">
+                <ul>
+                    <li class="cursor-pointer" id="redirect-to-mbti">MBTI
+                    </li>
+                    <li class="cursor-pointer">Các loại tính cách
+                        <nav class="menu-personalities">
+                            <ul>
+                                <li id="redirect-toNPT">Nhà Phân Tích</li>
+                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="cursor-pointer">Báo và khảo sát</li>
+
+                </ul>
+            </nav>
+            <div class="right-section">
+                <div class="cursor-pointer2" id="logout">LogOut</div>
             </div>
-            <form id="register-form">
-                <div class="input-name-wrapper">
-                    <div class="input-wrapper">
-                        <input type="text" name="firstName" placeholder="First name">
-                        <div class="error" id="first-name-error"></div>
-                    </div>
-                    <div class="input-wrapper">
-                        <input type="text" name="lastName" placeholder="Last name">
-                        <div class="error" id="last-name-error"></div>
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <input type="text" placeholder="Email" name="email">
-                    <div class="error" id="email-error"></div>
-                </div>
-                <div class="input-wrapper">
-                    <input type="password" placeholder="Password" name="password">
-                    <div class="error" id="password-error"></div>
-                </div>
-                <div class="input-wrapper">
-                    <input type="password" placeholder="Confirm password" name="confirmPassword">
-                    <div class="error" id="confirm-password-error"></div>
-                </div>
-                <div class="form-action">
-                    <span class="cursor-pointer2" id="redirect-to-login">
-                Already have an account? Login
-              </span>
-                    <button class="btn" type="submit">
-                Register
-              </button>
-                </div>
-            </form>
         </div>
-    </div>
-    <script src="../js/controller.js"></script>
-    <script src="../js/view.js"></script>
-    <script src="../js/model.js"></script>
-    <script src="../js/components.js"></script>
-    <script src="../js/index.js"></script>
+        <div class="result-wrapper">
+        </div>
+        <script src="../js/controller.js"></script>
+        <script src="../js/view.js"></script>
+        <script src="../js/model.js"></script>
+        <script src="../js/components.js"></script>
+        <script src="../js/index.js"></script>
 
 </body>
 
