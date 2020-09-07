@@ -34,14 +34,14 @@ model.equation = {
     leadership : [[2,15,19,30,27,42,38,47,41,55,78,60,88,105,90,3,96,100,109,108],0]
 }
 model.gettingEQuestion = (num) => {
-        noQuestion = model.equation.extroversion[0][num]
-        document.getElementById("question").innerText = model.questions[noQuestion]
-        const answerform = document.getElementById("form-test")
-        answerform.addEventListener("submit", (event) => {
-            event.preventDefault()
-            const data = document.getElementById('myRange').value
-            console.log("answer")
-            if (num % 2 === 0){
+    noQuestion = model.equation.extroversion[0][num]
+    document.getElementById("question").innerText = model.questions[noQuestion]
+    const answerform = document.getElementById("form-test")
+    answerform.addEventListener("submit", (event) => {
+        event.preventDefault()
+        const data = document.getElementById('myRange').value
+        console.log("answer")
+        if (num % 2 === 0){
             model.equation.extroversion[1] += controller.gettingAnswer(data)
             console.log("extroversion:")
             console.log(model.equation.extroversion[1])
