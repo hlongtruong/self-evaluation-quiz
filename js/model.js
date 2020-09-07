@@ -1,5 +1,30 @@
 const model = {}
 model.questions = undefined
+model.register = async(data) => {
+    try {
+        await firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+        firebase.auth().currentUser.updateProfile({
+            displayName: data.firstName + ' ' + data.lastName
+        })
+        firebase.auth().currentUser.sendEmailVerification()
+        alert('The email has been registered, please check you email!')
+        view.setActiveScreen('loginScreen')
+    } catch (err) {
+        console.log(err)
+        alert(err.message)
+    }
+}
+model.login = async(dataLogin) => {
+    try {
+        await firebase.auth().signInWithEmailAndPassword(dataLogin.email, dataLogin.password)
+
+    } catch (error) {
+        alert(error.message)
+    }
+}
+model.logout = async(dataLogin) => {
+    await firebase.auth().signOut()
+}
 model.equation = {
     extroversion : [[1,6,23,34,20,21,26,23,43,50,58,52,63,111,98,112,99,118,101,117],0],
     adaptability : [[13,25,18,40,33,45,56,75,65,79,73,84,76,89,76,93,106,91,110,115],0],
