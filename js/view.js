@@ -68,9 +68,57 @@ view.setActiveScreen = (screenName) => {
                 })
                 // let random = Math.floor(Math.random() * 120) + 1;
                 // document.getElementById('question').innerText = model.questions[random];
-                // document.getElementById('form-test')
-                //     .addEventListener('submit', (e) => {
-                //         e.preventDefault();
+            document.getElementById('form-test')
+                .addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const answerform = document.getElementById("form-test")
+                        // answerform.addEventListener('submit', (e) => {
+                        //     e.preventDefault()
+                        // })
+                    for (i; i < max; i++) {
+                        for (var j in model.equation) {
+                            if (answer == true) {
+                                noQuestion = model.equation[j][0][i]
+                                document.getElementById("question").innerText = model.questions[noQuestion]
+                                console.log("question");
+                                answer = false
+                            }
+                            if (answer == false) {
+                                answerform.addEventListener("submit", (event) => {
+                                    event.preventDefault()
+                                    const data = document.getElementById('myRange').value
+                                    console.log("answer");
+                                    if (i % 2 === 0) {
+                                        model.equation[j][1] += controller.gettingAnswer(data)
+                                        console.log(model.equation["extroversion"][1])
+                                        console.log(model.equation["adaptability"][1])
+                                        console.log(model.equation["conscientiousness"][1])
+                                        console.log(model.equation["neurotism"][1])
+                                        console.log(model.equation["wisdom"][1]);
+                                        console.log(model.equation["leadership"][1]);
+                                        answer = true
+                                    } else if (i % 2 === 1) {
+                                        model.equation[j][1] -= controller.gettingAnswer(data)
+                                        console.log(model.equation["extroversion"][1])
+                                        console.log(model.equation["adaptability"][1])
+                                        console.log(model.equation["conscientiousness"][1])
+                                        console.log(model.equation["neurotism"][1])
+                                        console.log(model.equation["wisdom"][1]);
+                                        console.log(model.equation["leadership"][1]);
+                                        answer = true
+                                    }
+                                })
+                            }
+
+                        }
+                    }
+                    // for(x in model.equation){
+                    //     console.log(model.equation[x][1]);
+                    // }
+                    var answer = true
+                    var i = parseInt(Math.random() * 16)
+                    max = i + 4
+                })
 
             //         number++;
             //         const score = document.getElementById('myRange')
@@ -107,51 +155,6 @@ view.setActiveScreen = (screenName) => {
             document.getElementById('redirect-to-register').addEventListener('click', () => {
                 view.setActiveScreen('registerScreen');
             })
-            const answerform = document.getElementById("form-test")
-            var answer = true
-            var i = parseInt(Math.random() * 16)
-            max = i + 4
-            for (i; i < max; i++) {
-                for (var j in model.equation) {
-                    if (answer == true) {
-                        noQuestion = model.equation[j][0][i]
-                        document.getElementById("question").innerText = model.questions[noQuestion]
-                        console.log("question");
-                        answer = false
-                    }
-                    if (answer == false){
-                        answerform.addEventListener("submit", (event) => {
-                            event.preventDefault()
-                            const data = document.getElementById('myRange').value
-                            console.log("answer");
-                            if (i % 2 === 0){
-                                model.equation[j][1] += controller.gettingAnswer(data)
-                                console.log(model.equation["extroversion"][1])
-                                console.log(model.equation["adaptability"][1])
-                                console.log(model.equation["conscientiousness"][1])
-                                console.log(model.equation["neurotism"][1])
-                                console.log(model.equation["wisdom"][1]);
-                                console.log(model.equation["leadership"][1]);
-                                answer = true
-                            }
-                            else if (i % 2 === 1){
-                                model.equation[j][1] -= controller.gettingAnswer(data)
-                                console.log(model.equation["extroversion"][1])
-                                console.log(model.equation["adaptability"][1])
-                                console.log(model.equation["conscientiousness"][1])
-                                console.log(model.equation["neurotism"][1])
-                                console.log(model.equation["wisdom"][1]);
-                                console.log(model.equation["leadership"][1]);
-                                answer = true
-                            }
-                        })
-                    }
-                        
-                }
-            }
-            // for(x in model.equation){
-            //     console.log(model.equation[x][1]);
-            // }
             break;
         case 'loginScreen':
             document.getElementById('app').innerHTML = components.loginScreen
