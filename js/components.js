@@ -59,6 +59,7 @@ components.resultScreen = `<div class="result-container">
     </div>
 </div>
 <div class="result-wrapper">
+    <div class = result-content>
         <div class="result-text">Kết Quả</div>
         <div id="e-score"></div>
         <div id="a-score"></div>
@@ -66,6 +67,7 @@ components.resultScreen = `<div class="result-container">
         <div id="n-score"></div>
         <div id="i-score"></div>
         <div id="l-score"></div>
+        </div>
 </div>
 </div>`
 components.mbtiScreen = `
