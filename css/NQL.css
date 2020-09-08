@@ -1,4 +1,4 @@
-.NQL-container .NQL-wrapper {
+.S-container .S-wrapper {
     background: #f2f3f4;
     min-height: 100vh;
     display: flex;
@@ -11,7 +11,7 @@
     margin-top: 90px;
 }
 
-.NQL-container .NQL-wrapper div {
+.S-container .S-wrapper div {
     height: 400px;
     width: 380px;
     display: flex;

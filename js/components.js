@@ -12,7 +12,7 @@ components.welcomeScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -45,7 +45,7 @@ components.resultScreen = `<div class="result-container">
                     <ul>
                     <li id="redirect-toNPT">Nhà Phân Tích</li>
                     <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                    <li id="redirect-toNQL">Nhà Quản Lý</li>
+                    <li id="redirect-toS">Nhà Quản Lý</li>
                     <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -81,7 +81,7 @@ components.mbtiScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -139,7 +139,7 @@ components.testScreen = `<div class="test-container">
                     <ul>
                     <li id="redirect-toNPT">Nhà Phân Tích</li>
                     <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                    <li id="redirect-toNQL">Nhà Quản Lý</li>
+                    <li id="redirect-toS">Nhà Quản Lý</li>
                     <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -172,7 +172,7 @@ components.NPTScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -218,7 +218,7 @@ components.NNGScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -252,8 +252,8 @@ components.NNGScreen = `
         </div>
     </div>
     `
-components.NQLScreen = `
-<div class="NQL-container">
+components.SScreen = `
+<div class="S-container">
         <div class="header-wrapper">
             <a href="" class="name-app">In To Out</a>
             <nav class="middel-section">
@@ -265,7 +265,7 @@ components.NQLScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -279,7 +279,7 @@ components.NQLScreen = `
 
             </div>
         </div>
-        <div class="NQL-wrapper">
+        <div class="S-wrapper">
             <div class="cursor-pointer1" id="redirect-to-NDNNV">
                 <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/sentinels_ISTJ_natalie_portman.svg?v=3" alt=""></div>
                 <div style="margin-top:4px; text-align:center;">NGƯỜI ĐẢM NHẬN NHIỆM VỤ (ISTJ-A/ISTJ-T)</div>
@@ -299,7 +299,6 @@ components.NQLScreen = `
         </div>
     </div>
     `
-
 components.NTHScreen = `
 <div class="NTH-container">
         <div class="header-wrapper">
@@ -313,7 +312,7 @@ components.NTHScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toS">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -347,7 +346,6 @@ components.NTHScreen = `
         </div>
     </div>
     `
-components.personalities = ``
 components.loginScreen = `
 <div class="login-container">
         <div class="aside-right">
@@ -429,7 +427,7 @@ components.NKHScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -643,7 +641,7 @@ components.NTDScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -829,7 +827,7 @@ components.NĐHScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -1033,7 +1031,7 @@ components.NNXScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -1252,7 +1250,7 @@ components.NCCScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -1529,7 +1527,7 @@ components.NLTHScreen = `
                     <ul>
                         <li id="redirect-toNPT">Nhà Phân Tích</li>
                         <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                        <li id="redirect-toS">Sentinels</li>
+                        <li id="redirect-toS">Nhà Quản Lý</li>
                         <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -1829,7 +1827,8 @@ components.NLTHScreen = `
 </div>
 </div>
 `
-components.NCCScreen = `<div class="NKH-container">
+components.NCCScreen = `
+<div class="NKH-container">
 <div class="header-wrapper">
     <a href="" class="name-app">In To Out</a>
     <nav class="middel-section">
@@ -1841,7 +1840,7 @@ components.NCCScreen = `<div class="NKH-container">
                     <ul>
                         <li id="redirect-toNPT">Nhà Phân Tích</li>
                         <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                        <li id="redirect-toS">Sentinels</li>
+                        <li id="redirect-toS">Nhà Quản Lý</li>
                         <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -2183,7 +2182,7 @@ components.NTCHScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -2516,7 +2515,7 @@ components.NDNNVScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -2851,7 +2850,7 @@ components.NNDScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -3209,7 +3208,7 @@ components.NBHScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -3510,7 +3509,7 @@ components.NQTScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -3850,7 +3849,7 @@ components.NCHScreen = `
                     <ul>
                         <li id="redirect-toNPT">Nhà Phân Tích</li>
                         <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                        <li id="redirect-toS">Sentinels</li>
+                        <li id="redirect-toS">Nhà Quản Lý</li>
                         <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -4215,7 +4214,7 @@ components.NNSScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -4447,7 +4446,7 @@ components.NTTScreen = `
                             <ul>
                                 <li id="redirect-toNPT">Nhà Phân Tích</li>
                                 <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
+                                <li id="redirect-toS">Nhà Quản Lý</li>
                                 <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -4740,7 +4739,8 @@ components.NTTScreen = `
         </div>
     </div>
 `
-components.NTDScreen = `<div class="NKH-container">
+components.NTDScreen = `
+<div class="NKH-container">
 <div class="header-wrapper">
     <a href="" class="name-app">In To Out</a>
     <nav class="middel-section">
@@ -4752,7 +4752,7 @@ components.NTDScreen = `<div class="NKH-container">
                     <ul>
                         <li id="redirect-toNPT">Nhà Phân Tích</li>
                         <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                        <li id="redirect-toS">Sentinels</li>
+                        <li id="redirect-toS">Nhà Quản Lý</li>
                         <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
