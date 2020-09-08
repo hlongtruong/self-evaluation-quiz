@@ -18,6 +18,8 @@
     top: 100px;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    margin-top: 90px;
 }
 
 .result-container .result-wrapper .result-content{
