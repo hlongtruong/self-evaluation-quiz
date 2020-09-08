@@ -126,66 +126,66 @@ view.setActiveScreen = (screenName) => {
             document.getElementById('app')
                 .innerHTML = components.resultScreen;
             if (model.equation.extroversion[1] > 0){
-                percentE = Math.abs(model.equation.extroversion[1]*100/8)
+                percentE = 50+Math.abs(model.equation.extroversion[1]*50/8)
                 document.getElementById("e-score").innerText = "Hướng Ngoại: " + percentE.toString() + "%"
             }
             else if (model.equation.extroversion[1] < 0){
-                percentE = Math.abs(model.equation.extroversion[1]*100/8)
+                percentE = 50+Math.abs(model.equation.extroversion[1]*50/8)
                 document.getElementById("e-score").innerText = "Hướng Nội: " + percentE.toString() + "%"
             }
             else{
                 document.getElementById("e-score").innerText = "Hướng Ngoại/Hướng Nội: Cân Bằng"
             }
             if (model.equation.adaptability[1] > 0){
-                percentA = Math.abs(model.equation.adaptability[1]*100/8)
+                percentA = 50+Math.abs(model.equation.adaptability[1]*50/8)
                 document.getElementById("a-score").innerText = "Hòa Nhập: " + percentA.toString() + "%"
             }
             else if (model.equation.adaptability[1] < 0){
-                percentA = Math.abs(model.equation.adaptability[1]*100/8)
+                percentA = 50+Math.abs(model.equation.adaptability[1]*50/8)
                 document.getElementById("a-score").innerText = "Thẳng Thắn: " + percentA.toString() + "%"
             }
             else{
                 document.getElementById("a-score").innerText = "Hòa Nhập/Thẳng Thắn: Cân Bằng"
             }
             if (model.equation.conscientiousness[1] > 0){
-                percentC = Math.abs(model.equation.conscientiousness[1]*100/8)
+                percentC = 50+Math.abs(model.equation.conscientiousness[1]*50/8)
                 document.getElementById("c-score").innerText = "Trách Nhiệm: " + percentC.toString() + "%"
             }
             else if (model.equation.conscientiousness[1] < 0){
-                percentC = Math.abs(model.equation.conscientiousness[1]*100/8)
+                percentC = 50+Math.abs(model.equation.conscientiousness[1]*50/8)
                 document.getElementById("c-score").innerText = "Tự Do: " + percentC.toString() + "%"
             }
             else{
                 document.getElementById("c-score").innerText = "Trách Nhiệm/Tự Do: Cân Bằng"
             }
             if (model.equation.neurotism[1] > 0){
-                percentN = Math.abs(model.equation.neurotism[1]*100/8)
+                percentN = 50+Math.abs(model.equation.neurotism[1]*50/8)
                 document.getElementById("n-score").innerText = "Cảm Xúc: " + percentN.toString() + "%"
             }
             else if (model.equation.neurotism[1] < 0){
-                percentN = Math.abs(model.equation.neurotism[1]*100/8)
+                percentN = 50+Math.abs(model.equation.neurotism[1]*50/8)
                 document.getElementById("n-score").innerText = "Lí trí: " + percentN.toString() + "%"
             }
             else{
                 document.getElementById("n-score").innerText = "Cảm Xúc/Lí Trí: Cân Bằng"
             }
             if (model.equation.inquisitiveness[1] > 0){
-                percentI = Math.abs(model.equation.inquisitiveness[1]*100/8)
+                percentI = 50+Math.abs(model.equation.inquisitiveness[1]*50/8)
                 document.getElementById("i-score").innerText = "Tò Mò: " + percentI.toString() + "%"
             }
             else if (model.equation.inquisitiveness[1] < 0){
-                percentI = Math.abs(model.equation.inquisitiveness[1]*100/8)
+                percentI = 50+Math.abs(model.equation.inquisitiveness[1]*50/8)
                 document.getElementById("i-score").innerText = "Lãnh Đạm: " + percentI.toString() + "%"
             }
             else{
                 document.getElementById("i-score").innerText = "Tò Mò/Lãnh Đạm: Cân Bằng"
             }
             if (model.equation.leadership[1] > 0){
-                percentL = Math.abs(model.equation.leadership[1]*100/8)
+                percentL = 50+Math.abs(model.equation.leadership[1]*50/8)
                 document.getElementById("l-score").innerText = "Lãnh Đạo: " + percentL.toString() + "%"
             }
             else if (model.equation.leadership[1] < 0){
-                percentL = Math.abs(model.equation.leadership[1]*100/8)
+                percentL = 50+Math.abs(model.equation.leadership[1]*50/8)
                 document.getElementById("l-score").innerText = "Cá Nhận: " + percentL.toString() + "%"
             }
             else{
