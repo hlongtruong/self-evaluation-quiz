@@ -1,5 +1,6 @@
 .result-container {
     background: url(../images/result-background.jpg);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     background-attachment: fixed;
@@ -26,7 +27,6 @@
     width: 500px;
     height: 300px;
     background-color: #f9f0c5;
-    color: #576071;
     border-radius: 10px;
     font-size: 23px;
     justify-content: center;
