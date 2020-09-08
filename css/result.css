@@ -1,4 +1,4 @@
-.result-container .result-wrapper {
+.result-container {
     background: url(../images/result-background.jpg);
     min-height: 100vh;
     display: flex;
@@ -10,4 +10,11 @@
     justify-content: space-around;
     margin-top: 90px;
     background-size: cover;
+}
+.result-container .result-wrapper{
+    font-size: 40px;
+    color: black;
+    padding: 30px;
+    position: fixed;
+    top: 100px;
 }

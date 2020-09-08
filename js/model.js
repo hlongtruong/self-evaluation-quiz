@@ -33,6 +33,9 @@ model.equation = {
     inquisitiveness : [[7,95,17,48,22,49,92,59,44,67,54,68,64,70,69,102,72,103,82,107],0],
     leadership : [[2,15,19,30,27,42,38,47,41,55,78,60,88,105,90,3,96,100,109,108],0]
 }
+model.gettingQuestions = () => {
+    model.gettingEQuestion()
+}
 model.gettingEQuestion = () => {
     noQuestion = model.equation.extroversion[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
