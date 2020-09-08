@@ -33,6 +33,41 @@ components.welcomeScreen = `
         </div>
     </div>
 `
+components.resultScreen = `<div class="result-container">
+<div class="header-wrapper">
+    <a href="" class="name-app">In To Out</a>
+    <nav class="middel-section">
+        <ul>
+            <li class="cursor-pointer" id="redirect-to-mbti">MBTI
+            </li>
+            <li class="cursor-pointer">Các loại tính cách
+                <nav class="menu-personalities">
+                    <ul>
+                    <li id="redirect-toNPT">Nhà Phân Tích</li>
+                    <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                    <li id="redirect-toNQL">Nhà Quản Lý</li>
+                    <li id="redirect-toNTH">Người Thám Hiểm</li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="cursor-pointer">Báo và khảo sát</li>
+
+        </ul>
+    </nav>
+    <div class="right-section">
+        <div class="cursor-pointer2" id="logout">LogOut</div>
+    </div>
+</div>
+<div class="result-wrapper">
+        <div class="result-text">Kết Quả</div>
+        <div id="e-score"></div>
+        <div id="a-score"></div>
+        <div id="c-score"></div>
+        <div id="n-score"></div>
+        <div id="i-score"></div>
+        <div id="l-score"></div>
+</div>
+</div>`
 components.mbtiScreen = `
 <div class="mbti-container">
         <div class="header-wrapper">
