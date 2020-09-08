@@ -1,6 +1,5 @@
 .result-container {
     background: url(../images/result-background.jpg);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     background-attachment: fixed;
@@ -18,7 +17,6 @@
     top: 100px;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     margin-top: 90px;
 }
 
