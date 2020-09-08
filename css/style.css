@@ -129,6 +129,8 @@ p {
     border-radius: 8px;
     margin: 10px;
     word-wrap: break-word;
+    justify-content: center;
+    text-align: justify;
 }
 
 h2 {

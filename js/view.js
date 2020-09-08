@@ -246,9 +246,9 @@ view.setActiveScreen = (screenName) => {
                 .addEventListener('click', () => {
                     view.setActiveScreen('NTDScreen')
                 })
-            document.getElementById('redirect-to-NQL')
+            document.getElementById('redirect-to-NĐH')
                 .addEventListener('click', () => {
-                    view.setActiveScreen('NQLScreen')
+                    view.setActiveScreen('NĐHScreen')
                 })
             document.getElementById('redirect-to-NNX')
                 .addEventListener('click', () => {
@@ -383,6 +383,26 @@ view.setActiveScreen = (screenName) => {
         case 'NKHScreen':
             document.getElementById('app')
                 .innerHTML = components.NKHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
@@ -391,14 +411,55 @@ view.setActiveScreen = (screenName) => {
         case 'NTDScreen':
             document.getElementById('app')
                 .innerHTML = components.NTDScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
                 })
             break;
-        case 'NQLSCreen':
+        case 'NĐHScreen':
             document.getElementById('app')
-                .innerHTML = components.NQLScreen;
+                .innerHTML = components.NĐHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
@@ -407,6 +468,26 @@ view.setActiveScreen = (screenName) => {
         case 'NNXScreen':
             document.getElementById('app')
                 .innerHTML = components.NNXScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
@@ -415,6 +496,26 @@ view.setActiveScreen = (screenName) => {
         case 'NCCScreen':
             document.getElementById('app')
                 .innerHTML = components.NCCScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
@@ -423,18 +524,306 @@ view.setActiveScreen = (screenName) => {
         case 'NLTHScreen':
             document.getElementById('app')
                 .innerHTML = components.NLTHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
                 })
             break;
         case 'NCDScreen':
+            document.getElementById('app')
+                .innerHTML = components.NLTHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
                 })
             break;
         case 'NTCHScreen':
+            document.getElementById('app')
+                .innerHTML = components.NLTHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NDNNVScreen':
+            document.getElementById('app')
+                .innerHTML = components.NDNNVScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NBHScreen':
+            document.getElementById('app')
+                .innerHTML = components.NBHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NNDScreen':
+            document.getElementById('app')
+                .innerHTML = components.NNDScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NQTScreen':
+            document.getElementById('app')
+                .innerHTML = components.NQTScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NCHScreen':
+            document.getElementById('app')
+                .innerHTML = components.NCHScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NNSScreen':
+            document.getElementById('app')
+                .innerHTML = components.NNSScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NTTScreen':
+            document.getElementById('app')
+                .innerHTML = components.NTTScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
+            document.getElementById('logout')
+                .addEventListener('click', () => {
+                    model.logout();
+                })
+            break;
+        case 'NTDScreen':
+            document.getElementById('app')
+                .innerHTML = components.NTDScreen;
+            document.getElementById('redirect-to-mbti')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('mbtiScreen')
+                })
+            document.getElementById('redirect-toNPT')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NPTScreen')
+                })
+            document.getElementById('redirect-toNNG')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NNGScreen')
+                })
+            document.getElementById('redirect-toS')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('SScreen')
+                })
+            document.getElementById('redirect-toNTH')
+                .addEventListener('click', () => {
+                    view.setActiveScreen('NTHScreen')
+                })
             document.getElementById('logout')
                 .addEventListener('click', () => {
                     model.logout();
