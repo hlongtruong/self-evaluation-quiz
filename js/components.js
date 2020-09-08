@@ -10,10 +10,10 @@ components.welcomeScreen = `
                     <li class="cursor-pointer">Các loại tính cách
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            <li id="redirect-toNPT">Nhà Phân Tích</li>
+                            <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>
@@ -46,7 +46,7 @@ components.mbtiScreen = `
                             <ul>
                             <li id="redirect-toNPT">Nhà Phân Tích</li>
                             <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                            <li id="redirect-toS">Sentinels</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
                             <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
@@ -104,7 +104,7 @@ components.testScreen = `<div class="test-container">
                     <ul>
                     <li id="redirect-toNPT">Nhà Phân Tích</li>
                     <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                    <li id="redirect-toS">Sentinels</li>
+                    <li id="redirect-toNQL">Nhà Quản Lý</li>
                     <li id="redirect-toNTH">Người Thám Hiểm</li>
                     </ul>
                 </nav>
@@ -135,10 +135,10 @@ components.NPTScreen = `
                     <li class="cursor-pointer">Các loại tính cách
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            <li id="redirect-toNPT">Nhà Phân Tích</li>
+                            <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>
@@ -181,10 +181,10 @@ components.NNGScreen = `
                     <li class="cursor-pointer">Các loại tính cách
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            <li id="redirect-toNPT">Nhà Phân Tích</li>
+                            <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>
@@ -217,8 +217,8 @@ components.NNGScreen = `
         </div>
     </div>
     `
-components.SScreen = `
-<div class="S-container">
+components.NQLScreen = `
+<div class="NQL-container">
         <div class="header-wrapper">
             <a href="" class="name-app">In To Out</a>
             <nav class="middel-section">
@@ -228,10 +228,10 @@ components.SScreen = `
                     <li class="cursor-pointer">Các loại tính cách
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            <li id="redirect-toNPT">Nhà Phân Tích</li>
+                            <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>
@@ -244,7 +244,7 @@ components.SScreen = `
 
             </div>
         </div>
-        <div class="S-wrapper">
+        <div class="NQL-wrapper">
             <div class="cursor-pointer1" id="redirect-to-NDNNV">
                 <div id="kientrucsu-image"><img src="https://static.neris-assets.com/images/personality-types/famous/sentinels_ISTJ_natalie_portman.svg?v=3" alt=""></div>
                 <div style="margin-top:4px; text-align:center;">NGƯỜI ĐẢM NHẬN NHIỆM VỤ (ISTJ-A/ISTJ-T)</div>
@@ -273,13 +273,13 @@ components.NTHScreen = `
                 <ul>
                     <li class="cursor-pointer" id="redirect-to-mbti">MBTI
                     </li>
-                    <li class="cursor-pointer">Các loại tính cách
+                    <li class="cursor-pointer">Phân loại
                         <nav class="menu-personalities">
                             <ul>
-                                <li id="redirect-toNPT">Nhà Phân Tích</li>
-                                <li id="redirect-toNNG">Nhà Ngoại Giao</li>
-                                <li id="redirect-toS">Sentinels</li>
-                                <li id="redirect-toNTH">Người Thám Hiểm</li>
+                            <li id="redirect-toNPT">Nhà Phân Tích</li>
+                            <li id="redirect-toNNG">Nhà Ngoại Giao</li>
+                            <li id="redirect-toNQL">Nhà Quản Lý</li>
+                            <li id="redirect-toNTH">Người Thám Hiểm</li>
                             </ul>
                         </nav>
                     </li>

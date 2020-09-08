@@ -30,8 +30,11 @@ model.equation = {
     adaptability : [[13,25,18,40,33,45,56,75,65,79,73,84,76,89,76,93,106,91,110,115],0],
     conscientiousness : [[4,8,9,14,11,24,16,29,36,46,61,51,66,97,74,113,86,114,94,116],0],
     neurotism : [[0,104,28,5,32,10,39,12,53,37,31,57,71,62,83,77,35,80,87,85],0],
-    wisdom : [[7,95,17,48,22,49,92,59,44,67,54,68,64,70,69,102,72,103,82,107],0],
+    inquisitiveness : [[7,95,17,48,22,49,92,59,44,67,54,68,64,70,69,102,72,103,82,107],0],
     leadership : [[2,15,19,30,27,42,38,47,41,55,78,60,88,105,90,3,96,100,109,108],0]
+}
+model.gettingQuestions = () => {
+    model.gettingEQuestion()
 }
 model.gettingEQuestion = () => {
     noQuestion = model.equation.extroversion[0][rannum]
@@ -127,30 +130,30 @@ model.gettingNQuestion = () => {
             console.log(model.equation.neurotism[1])
         }
         answerform.removeEventListener("submit", gettingNAnswer)
-        model.gettingWQuestion()
+        model.gettingIQuestion()
     })
 }
-model.gettingWQuestion = () => {
-    noQuestion = model.equation.wisdom[0][rannum]
+model.gettingIQuestion = () => {
+    noQuestion = model.equation.inquisitiveness[0][rannum]
     document.getElementById("question").innerText = model.questions[noQuestion]
     number++
     console.log(number)
     const answerform = document.getElementById("form-test")
-    answerform.addEventListener("submit", function gettingWAnswer(event){
+    answerform.addEventListener("submit", function gettingIAnswer(event){
         event.preventDefault()
         const data = document.getElementById('myRange').value
         console.log("answer")
         if (rannum % 2 === 0){
-            model.equation.wisdom[1] += controller.scoringAnswer(data)
-            console.log("wisdom:")
-            console.log(model.equation.wisdom[1])
+            model.equation.inquisitiveness[1] += controller.scoringAnswer(data)
+            console.log("inquisitiveness:")
+            console.log(model.equation.inquisitiveness[1])
         }
         else if (rannum % 2 === 1){
-            model.equation.wisdom[1] -= controller.scoringAnswer(data)
-            console.log("wisdom:")
-            console.log(model.equation.wisdom[1])
+            model.equation.inquisitiveness[1] -= controller.scoringAnswer(data)
+            console.log("inquisitiveness:")
+            console.log(model.equation.inquisitiveness[1])
         }
-        answerform.removeEventListener("submit", gettingWAnswer)
+        answerform.removeEventListener("submit", gettingIAnswer)
         model.gettingLQuestion()
     })
 }
@@ -175,7 +178,7 @@ model.gettingLQuestion = () => {
             console.log(model.equation.leadership[1])
         }
         answerform.removeEventListener("submit", gettingLAnswer)
-        if(number >= 6){
+        if (number >= 24){
             view.setActiveScreen("resultScreen")
             return;
         }

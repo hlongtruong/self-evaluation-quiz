@@ -62,77 +62,11 @@ view.setActiveScreen = (screenName) => {
 
         case 'testScreen':
             document.getElementById('app').innerHTML = components.testScreen
-            model.gettingEQuestion()
+            model.gettingQuestions()
             document.getElementById('redirect-to-mbti')
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
                 })
-                // let random = Math.floor(Math.random() * 120) + 1;
-                // document.getElementById('question').innerText = model.questions[random];
-            document.getElementById('form-test')
-                .addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    const answerform = document.getElementById("form-test")
-                        // answerform.addEventListener('submit', (e) => {
-                        //     e.preventDefault()
-                        // })
-                    for (i; i < max; i++) {
-                        for (var j in model.equation) {
-                            if (answer == true) {
-                                noQuestion = model.equation[j][0][i]
-                                document.getElementById("question").innerText = model.questions[noQuestion]
-                                console.log("question");
-                                answer = false
-                            }
-                            if (answer == false) {
-                                answerform.addEventListener("submit", (event) => {
-                                    event.preventDefault()
-                                    const data = document.getElementById('myRange').value
-                                    console.log("answer");
-                                    if (i % 2 === 0) {
-                                        model.equation[j][1] += controller.gettingAnswer(data)
-                                        console.log(model.equation["extroversion"][1])
-                                        console.log(model.equation["adaptability"][1])
-                                        console.log(model.equation["conscientiousness"][1])
-                                        console.log(model.equation["neurotism"][1])
-                                        console.log(model.equation["wisdom"][1]);
-                                        console.log(model.equation["leadership"][1]);
-                                        answer = true
-                                    } else if (i % 2 === 1) {
-                                        model.equation[j][1] -= controller.gettingAnswer(data)
-                                        console.log(model.equation["extroversion"][1])
-                                        console.log(model.equation["adaptability"][1])
-                                        console.log(model.equation["conscientiousness"][1])
-                                        console.log(model.equation["neurotism"][1])
-                                        console.log(model.equation["wisdom"][1]);
-                                        console.log(model.equation["leadership"][1]);
-                                        answer = true
-                                    }
-                                })
-                            }
-
-                        }
-                    }
-                    // for(x in model.equation){
-                    //     console.log(model.equation[x][1]);
-                    // }
-                    var answer = true
-                    var i = parseInt(Math.random() * 16)
-                    max = i + 4
-                })
-
-            //     number++;
-            //     const score = document.getElementById('myRange')
-            //     console.log(score.value)
-
-            //     if (number < 25) {
-            //         document.getElementById('question').innerText = model.questions[random];
-            //         let random1 = Math.floor(Math.random() * 120) + 1;
-            //         document.getElementById('question').innerText = model.questions[random1];
-            //     } else if (number >= 25) {
-            //         view.setActiveScreen('resultScreen');
-            //      }
-            // })
             document.getElementById('redirect-toNPT')
                 .addEventListener('click', () => {
                     view.setActiveScreen('NPTScreen')
@@ -153,9 +87,6 @@ view.setActiveScreen = (screenName) => {
                 .addEventListener('click', () => {
                     model.logout();
                 })
-            document.getElementById('redirect-to-register').addEventListener('click', () => {
-                view.setActiveScreen('registerScreen');
-            })
             break;
         case 'loginScreen':
             document.getElementById('app').innerHTML = components.loginScreen
@@ -194,6 +125,72 @@ view.setActiveScreen = (screenName) => {
         case 'resultScreen':
             document.getElementById('app')
                 .innerHTML = components.resultScreen;
+            if (model.equation.extroversion[1] > 0){
+                percentE = Math.abs(model.equation.extroversion[1]*100/8)
+                document.getElementById("e-score").innerText = "Hướng Ngoại: " + percentE.toString() + "%"
+            }
+            else if (model.equation.extroversion[1] < 0){
+                percentE = Math.abs(model.equation.extroversion[1]*100/8)
+                document.getElementById("e-score").innerText = "Hướng Nội: " + percentE.toString() + "%"
+            }
+            else{
+                document.getElementById(e-score).innerText = "Hướng Ngoại/Hướng Nội: Cân Bằng"
+            }
+            if (model.equation.adaptability[1] > 0){
+                percentA = Math.abs(model.equation.adaptability[1]*100/8)
+                document.getElementById("a-score").innerText = "Hòa Nhập: " + percentA.toString() + "%"
+            }
+            else if (model.equation.adaptability[1] < 0){
+                percentA = Math.abs(model.equation.adaptability[1]*100/8)
+                document.getElementById("a-score").innerText = "Thẳng Thắn: " + percentA.toString() + "%"
+            }
+            else{
+                document.getElementById(a-score).innerText = "Hòa Nhập/Thẳng Thắn: Cân Bằng"
+            }
+            if (model.equation.conscientiousness[1] > 0){
+                percentC = Math.abs(model.equation.conscientiousness[1]*100/8)
+                document.getElementById("c-score").innerText = "Trách Nhiệm: " + percentC.toString() + "%"
+            }
+            else if (model.equation.conscientiousness[1] < 0){
+                percentC = Math.abs(model.equation.conscientiousness[1]*100/8)
+                document.getElementById("c-score").innerText = "Tự Do: " + percentC.toString() + "%"
+            }
+            else{
+                document.getElementById(c-score).innerText = "Trách Nhiệm/Tự Do: Cân Bằng"
+            }
+            if (model.equation.neurotism[1] > 0){
+                percentN = Math.abs(model.equation.neurotism[1]*100/8)
+                document.getElementById("n-score").innerText = "Cảm Xúc: " + percentN.toString() + "%"
+            }
+            else if (model.equation.neurotism[1] < 0){
+                percentN = Math.abs(model.equation.neurotism[1]*100/8)
+                document.getElementById("n-score").innerText = "Lí trí: " + percentN.toString() + "%"
+            }
+            else{
+                document.getElementById(n-score).innerText = "Cảm Xúc/Lí Trí: Cân Bằng"
+            }
+            if (model.equation.inquisitiveness[1] > 0){
+                percentI = Math.abs(model.equation.inquisitiveness[1]*100/8)
+                document.getElementById("i-score").innerText = "Tò Mò: " + percentI.toString() + "%"
+            }
+            else if (model.equation.inquisitiveness[1] < 0){
+                percentI = Math.abs(model.equation.inquisitiveness[1]*100/8)
+                document.getElementById("i-score").innerText = "Lãnh Đạm: " + percentI.toString() + "%"
+            }
+            else{
+                document.getElementById(i-score).innerText = "Tò Mò/Lãnh Đạm: Cân Bằng"
+            }
+            if (model.equation.leadership[1] > 0){
+                percentL = Math.abs(model.equation.leadership[1]*100/8)
+                document.getElementById("l-score").innerText = "Lãnh Đạo: " + percentL.toString() + "%"
+            }
+            else if (model.equation.leadership[1] < 0){
+                percentL = Math.abs(model.equation.leadership[1]*100/8)
+                document.getElementById("l-score").innerText = "Cá Nhận: " + percentL.toString() + "%"
+            }
+            else{
+                document.getElementById(l-score).innerText = "Lãnh Đạo/Cá Nhân: Cân Bằng"
+            }
             document.getElementById('redirect-to-mbti')
                 .addEventListener('click', () => {
                     view.setActiveScreen('mbtiScreen')
